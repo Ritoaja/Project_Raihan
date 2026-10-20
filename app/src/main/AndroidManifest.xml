@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Project_Raihan">
 
         <activity
-            android:name=".SplashActivity"
+            android:name=".project3tic.SplashActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -23,7 +23,12 @@
         </activity>
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".project3tic.LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".project3tic.BaseActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 

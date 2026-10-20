@@ -1,4 +1,4 @@
-package com.example.project_raihan
+package com.example.project_raihan.project3tic
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -35,14 +35,11 @@ class LoginActivity : AppCompatActivity() {
             val password = binding.edtPassword.text.toString().trim()
 
             // Pengecekan Username/Email dan Password
-            // Validasi input kosong
             if (email.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Email dan Kata Sandi tidak boleh kosong!", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
-            // Simulasi pengecekan autentikasi kredensial (dapat disesuaikan)
-            // Contoh validasi: email dan password benar atau minimal panjang password
             if (email == "admin@oceancare.com" && password == "123456" || (email.isNotEmpty() && password.length >= 6)) {
                 // Autentikasi berhasil: Simpan status isLogin = true ke SharedPreferences
                 val editor = sharedPreferences.edit()
@@ -52,8 +49,8 @@ class LoginActivity : AppCompatActivity() {
 
                 Toast.makeText(this, "Login Berhasil!", Toast.LENGTH_SHORT).show()
 
-                // Intent dari Halaman Login ke MainActivity
-                val intent = Intent(this, MainActivity::class.java)
+                // Intent dari Halaman Login ke BaseActivity (Fragment Container)
+                val intent = Intent(this, BaseActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {

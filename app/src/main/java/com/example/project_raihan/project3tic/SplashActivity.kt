@@ -1,4 +1,4 @@
-package com.example.project_raihan
+package com.example.project_raihan.project3tic
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -37,8 +37,8 @@ class SplashActivity : AppCompatActivity() {
         Handler(Looper.getMainLooper()).postDelayed({
             val isLogin = sharedPreferences.getBoolean("isLogin", false)
             if (isLogin) {
-                // If already logged in, go to MainActivity
-                val intent = Intent(this, MainActivity::class.java)
+                // If already logged in, go to BaseActivity
+                val intent = Intent(this, BaseActivity::class.java)
                 startActivity(intent)
             } else {
                 // If not logged in, go to LoginActivity
