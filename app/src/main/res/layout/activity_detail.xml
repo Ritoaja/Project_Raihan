@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ocean_light_teal"
+    tools:context=".DetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbarDetail"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/ocean_primary"
+            app:navigationIcon="@drawable/ic_launcher_foreground"
+            app:title="Detail OceanCare"
+            app:titleTextColor="@color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivDetailLogo"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="16dp"
+                        android:contentDescription="Ocean Logo"
+                        android:src="@drawable/logo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/text"
+                        android:text="OceanCare"
+                        android:textColor="@color/ocean_primary_dark"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/font1"
+                        android:text="Jaga Laut, Jaga Masa Depan"
+                        android:textColor="@color/ocean_teal"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="16dp"
+                        android:contentDescription="Ocean Banner"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gambar3" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/text"
+                        android:lineSpacingExtra="4dp"
+                        android:text="OceanCare hadir sebagai aplikasi mobile berbasis edukasi dan konservasi laut yang mengusung konsep underwater interaktif untuk menumbuhkan kepedulian masyarakat terhadap ekosistem perairan. Aplikasi ini mengintegrasikan tiga fitur utama: Ensiklopedia yang menyajikan katalog lengkap biota laut beserta data taksonomi, habitat, hingga status konservasinya; Edukasi yang membedah isu-isu lingkungan krusial seperti pencemaran dan ancaman sampah plastik; serta Kuis interaktif pilihan ganda untuk menguji pemahaman pengguna. Pengalaman eksplorasi ini ditunjang oleh fitur pendukung seperti daily trivia 'Tahukah Kamu?', pencarian cepat, serta penyimpanan materi favorit.\n\nDari segi identitas visual, OceanCare memadukan elemen khas bawah laut—seperti penyu, paus, terumbu karang, dan gelembung air—dengan paduan palet warna cyan dan biru laut yang memiliki hierarki kuat. Penggunaan warna gelap #01356D memberikan batas tegas pada teks utama dan memberikan kedalaman visual, sementara gradasi warna yang lebih terang (#016CA5, #0396C7, #04BBDF, #96D8E8, dan #C0E8EF) menghadirkan kesan air laut yang segar, bersih, dan modern. Mengusung tagline 'Jaga Laut, Jaga Masa Depan', OceanCare tidak hanya berfungsi sebagai referensi digital, tetapi juga sebagai media edukasi interaktif yang mengajak pengguna mengenal, memahami, dan beraksi nyata demi kelestarian laut."
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
