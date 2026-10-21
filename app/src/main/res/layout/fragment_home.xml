@@ -53,12 +53,12 @@
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/btnkembali"
+                    android:id="@+id/btndetail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:backgroundTint="@color/ocean_primary"
-                    android:text="Kembali / Keluar"
+                    android:text="Detail Ocean Care"
                     app:cornerRadius="8dp" />
 
                 <Button

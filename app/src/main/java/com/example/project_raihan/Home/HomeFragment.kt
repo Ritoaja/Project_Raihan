@@ -35,7 +35,7 @@ class HomeFragment : Fragment() {
 
         binding.timpanama.text = nama
 
-        binding.btnkembali.setOnClickListener {
+        binding.btndetail.setOnClickListener {
             val intent = Intent(requireContext(), DetailActivity::class.java)
             startActivity(intent)
         }
