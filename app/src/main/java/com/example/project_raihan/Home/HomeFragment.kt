@@ -11,6 +11,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.example.project_raihan.DetailActivity
+import com.example.project_raihan.Home.Pertemuan5.LimaActivity
+import com.example.project_raihan.Home.pertemuan_6.MainActivity6
 import com.example.project_raihan.project3tic.LoginActivity
 import com.example.project_raihan.R
 import com.example.project_raihan.databinding.FragmentHomeBinding
@@ -41,11 +43,13 @@ class HomeFragment : Fragment() {
         }
 
         binding.btnToLima.setOnClickListener {
-            Toast.makeText(requireContext(), "Fitur Edukasi & Konservasi Laut OceanCare", Toast.LENGTH_SHORT).show()
+            val intent = Intent(requireContext(), LimaActivity::class.java)
+            startActivity(intent)
         }
 
         binding.btnEnam.setOnClickListener {
-            Toast.makeText(requireContext(), "Fitur Ensiklopedia Biota Laut", Toast.LENGTH_SHORT).show()
+            val intent = Intent(requireContext(), MainActivity6::class.java)
+            startActivity(intent)
         }
 
         binding.btnsnack.setOnClickListener {

@@ -46,6 +46,16 @@
             android:name=".dashboard_sederhana"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".Home.pertemuan_6.MainActivity6"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".Home.Pertemuan5.LimaActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
