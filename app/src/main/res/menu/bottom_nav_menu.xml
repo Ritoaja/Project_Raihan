@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/home"
+        android:id="@+id/nav_beranda"
         android:icon="@android:drawable/ic_menu_myplaces"
-        android:title="Home" />
+        android:title="Beranda" />
     <item
-        android:id="@+id/message"
-        android:icon="@android:drawable/ic_menu_send"
-        android:title="Message" />
+        android:id="@+id/nav_jelajah"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="Jelajah" />
     <item
-        android:id="@+id/more"
-        android:icon="@android:drawable/ic_menu_more"
-        android:title="More" />
+        android:id="@+id/nav_edukasi"
+        android:icon="@drawable/ic_book"
+        android:title="Edukasi" />
+    <item
+        android:id="@+id/nav_profil"
+        android:icon="@drawable/ic_person"
+        android:title="Profil" />
 </menu>
