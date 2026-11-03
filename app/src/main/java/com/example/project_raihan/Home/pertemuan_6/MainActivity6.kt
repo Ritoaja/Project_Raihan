@@ -21,6 +21,10 @@ class MainActivity6 : AppCompatActivity() {
             setDisplayHomeAsUpEnabled(true)
         }
 
+        binding.toolbar.setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
         // Default load Fragment 1
         if (savedInstanceState == null) {
             replaceFragment(SatuFragment())
